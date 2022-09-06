@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  padding: 2rem;
+}

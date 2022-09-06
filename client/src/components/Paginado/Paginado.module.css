@@ -1,0 +1,25 @@
+.nav{
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: .25rem;
+}
+
+.a{
+ color: #2b1055;
+ padding: .25rem;
+}
+
+.a:hover{
+    background-color: rgba(151, 60, 255, 0.74);
+    color:#fff;
+    cursor: pointer;
+}
+
+.ul{
+    display: flex;
+}
+
+.li{
+    align-self: center;
+}

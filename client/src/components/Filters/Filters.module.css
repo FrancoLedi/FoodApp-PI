@@ -1,0 +1,18 @@
+.container{
+    grid-row-start: 2;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+.select{
+    background-color:rgb(12, 11, 11);
+    color: #2b1055;
+    font-weight: 800;
+    padding: .1rem;
+    margin: .15rem;
+    width: 50%;
+}
+
+.select:hover{
+    cursor: pointer;
+}

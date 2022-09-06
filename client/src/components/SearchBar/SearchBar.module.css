@@ -1,0 +1,42 @@
+.container{
+    grid-row-start: 1;
+    margin-bottom: 1rem;
+}
+
+.div{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.div input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: .2rem;
+    font-size: .75rem;
+    font-weight: 700;
+    color: #cac7ff;
+}
+
+.div button{
+    color: #2b1055;
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 0px 25px;
+}
+
+.div button:hover{
+    background-color: rgba(151, 60, 255, 0.74);
+    color:#fff;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: #cac7ff;
+}

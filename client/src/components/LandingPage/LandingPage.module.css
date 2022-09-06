@@ -1,0 +1,48 @@
+.container{
+ flex: 1;
+ display: grid;
+ grid-auto-columns: max-content;
+ align-content: center;
+ justify-content: end;
+}
+
+.div{
+    height: fit-content;
+    width: fit-content;
+    padding: 6px 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #2b1055;
+    margin: 6rem;
+    box-shadow: 0px 10px 33px rgb(0,0,0,0.75);
+    border: 1px solid rgba(255,255,255,.15);
+}
+
+.btn:hover{
+    background-color: rgba(151, 60, 255, 0.74);
+    color:#fff;
+    cursor: pointer;
+}
+
+.div h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.9em;
+    margin-bottom: 0.25em;
+}
+
+.div button{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 1.1em;
+    border: 0;
+    color: #000;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 8px 30px
+}
+.btn{
+    margin-bottom: 0.28em;
+}
+
