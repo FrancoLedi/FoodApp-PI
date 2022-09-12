@@ -8,7 +8,7 @@ export const SORT = 'SORT';
 export const DETAIL = 'DETAIL';
 export const CLEAN = 'CLEAN';
 
-const baseURL = "https://food-portfolio.herokuapp.com";
+axios.defaults.baseURL = process.env.REACT_APP_API || "http://localhost:3001" /*"https://food-portfolio.herokuapp.com";*/
 
 export function cleanRecipe(){
 
@@ -22,7 +22,7 @@ export function cleanRecipe(){
 export function getAllRecipes(){
     
      return async function(dispatch) {
-        var json = await axios(`${baseURL}/recipes`)
+        var json = await axios(`/recipes`)
             return dispatch({
                 type: GET_ALL_RECIPES, 
                 payload: json.data
@@ -35,7 +35,7 @@ export function getRecipe(name){
     return async function(dispatch) {
         try {
             
-            var recipes = await axios(`${baseURL}/recipes?name=` + name)
+            var recipes = await axios(`/recipes?name=` + name)
             
            return dispatch({
                type: GET_RECIPE, 
@@ -50,7 +50,7 @@ export function getRecipe(name){
 
 export function getDiets() {
     return async function(dispatch) {
-      var diets = await axios(`${baseURL}/diets`)
+      var diets = await axios(`/diets`)
       return dispatch({
         type: GET_DIETS, 
         payload: diets.data
@@ -60,7 +60,7 @@ export function getDiets() {
 
 export function createRecipe(payload){
     return async function(dispatch) {
-        var recipe = await axios.post(`${baseURL}/recipes`, payload)
+        var recipe = await axios.post(`/recipes`, payload)
         
         return recipe
       }
@@ -80,7 +80,7 @@ export function sortRecipesBy(payload) {
 
 export function getDetail(id) {
     return async function (dispatch){
-        var detail = await axios(`${baseURL}/recipes/` + id);
+        var detail = await axios(`/recipes/` + id);
         return dispatch({
             type: DETAIL,
             payload: detail.data
